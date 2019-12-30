@@ -137,4 +137,5 @@ $ ./nocgen.pl clean
 If you use our NoC generator, please cite our original paper as follows.
 
 > "An open-source on-chip router model originally developed for [Matsutani_HPCA09]"  
+>  
 > [Matsutani_HPCA09] Hiroki Matsutani, Michihiro Koibuchi, Hideharu Amano, Tsutomu Yoshinaga, "Prediction Router: Yet Another Low Latency On-Chip Router Architecture", Proc. of the 15th IEEE International Symposium on High-Performance Computer Architecture (HPCA'09), pp.367-378, Feb 2009.
