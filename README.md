@@ -103,7 +103,7 @@ Then you can estimate the energy-per-bit of a large router ($vch_num=8, $buf_siz
 > Flit width: 32 bit  
 
 > 0.4[mJ] / 200[MHz] * 13/4 / 32[bit]  
-> = ((0.4*10^(-3) / (200*10^6)) * 13/4 / 32) * 10^12  
+> = ((0.4 * 10^(-3) / (200 * 10^6)) * 13/4 / 32) * 10^12  
 > = 0.203125 [pJ/bit]  
 
 Also you can estimate the energy-per-bit of a large router ($vch_num=2, $buf_size=5), as follows.
@@ -122,7 +122,12 @@ Also you can estimate the energy-per-bit of a large router ($vch_num=2, $buf_siz
 > Flit width: 32 bit  
 
 > 0.17[mJ] / 200[MHz] * 13/4 / 32[bit]  
-> = (0.17*10^(-3) / (200*10^6)) * 13/4 / 32) * 10^12  
+> = (0.17 * 10^(-3) / (200 * 10^6)) * 13/4 / 32) * 10^12  
 > = 0.08632812 [pJ/bit]  
 
 ## Remove unused files
+
+```sh
+$ make allclean
+$ ./nocgen.pl clean
+```
