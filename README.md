@@ -59,3 +59,32 @@ Below are performance results ($packet_num=32, $traffic_ptn=uniform, $packet_len
 
 ## Design Synthesis (Synopsys Design Compiler)
 
+```sh
+$ make syn
+```
+
+## Place and Route (Cadence SoC Encounter)
+
+```sh
+$ make par
+```
+
+## Static Timing Analysis (Synopsys Design Compiler)
+
+```sh
+$ make sta
+```
+
+## Gate-level simulation with SDF file (Cadence NC-Verilog)
+
+```sh
+$ make dsim
+```
+
+## Power Estimation (Synopsys Design Compiler)
+
+```sh
+$ make power
+```
+
+Then you can estimate the energy-per-bit of a large router ($vch_num=8, $buf_size=16), as follows.
