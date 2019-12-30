@@ -32,6 +32,6 @@ You can customize various router parameters. Below are the default values.
 > $arbiter_type = fixed; (fixed or roundrobin)
 
 You can customize the traffic pattern. Below are the default values.
-> $traffic_ptn = random; (random or uniform)
-> $packet_len = 5;
-> $packet_num = 40;
+> $traffic_ptn = random; [random or uniform]  
+> $packet_len = 5;  
+> $packet_num = 40;  
