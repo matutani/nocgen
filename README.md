@@ -88,3 +88,41 @@ $ make power
 ```
 
 Then you can estimate the energy-per-bit of a large router ($vch_num=8, $buf_size=16), as follows.
+
+> Power with 0 stream:  45.7 mW  
+> Power with 1 stream:  46.0 mW  
+> Power with 2 streams: 46.4 mW  
+> Power with 3 streams: 46.8 mW  
+> Power with 4 streams: 47.2 mW  
+> Power with 5 streams: 47.6 mW  
+> --> Delta is approx 0.4 mW  
+
+> 0.4 mJ is consumed in 1 sec  
+> Frequency: 200 MHz  
+> Link utilization: 4/13  
+> Flit width: 32 bit  
+
+> 0.4[mJ] / 200[MHz] * 13/4 / 32[bit]  
+> = ((0.4*10^(-3) / (200*10^6)) * 13/4 / 32) * 10^12  
+> = 0.203125 [pJ/bit]  
+
+Also you can estimate the energy-per-bit of a large router ($vch_num=2, $buf_size=5), as follows.
+
+> Power with 0 stream:  4.59 mW  
+> Power with 1 stream:  4.75 mW  
+> Power with 2 streams: 4.92 mW  
+> Power with 3 streams: 5.08 mW  
+> Power with 4 streams: 5.25 mW  
+> Power with 5 streams: 5.43 mW  
+> --> Delta is approx 0.17 mW  
+
+> 0.17 mJ is consumed in 1 sec  
+> Frequency: 200 MHz  
+> Link utilization: 4/13  
+> Flit width: 32 bit  
+
+> 0.17[mJ] / 200[MHz] * 13/4 / 32[bit]  
+> = (0.17*10^(-3) / (200*10^6)) * 13/4 / 32) * 10^12  
+> = 0.08632812 [pJ/bit]  
+
+## Remove unused files
