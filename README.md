@@ -14,11 +14,11 @@ By modifying the Perl script, you can customize the network topology, routing al
 
 You can customize the network topology. Below are some examples.
 2D Mesh topology (4x4 = 16 nodes):
-> $array_size = 4; 
-> $topology_type = mesh; 
-> $routing_type = mesh2d; 
+> $array_size = 4;  
+> $topology_type = mesh;  
+> $routing_type = mesh2d;  
 
 Linear topology (16 nodes):
-> $array_size = 16; 
-> $topology_type = linear; 
-> $routing_type = mesh1d; 
+> $array_size = 16;  
+> $topology_type = linear;  
+> $routing_type = mesh1d;  
