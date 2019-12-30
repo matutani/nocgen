@@ -9,7 +9,7 @@ By modifying the Perl script, you can customize the network topology, routing al
 ## Generating Verilog HDL model
 
 ```sh
-> ./nocgen.pl
+$ ./nocgen.pl
 ```
 
 You can customize the network topology. Below are some examples.
@@ -29,9 +29,33 @@ You can customize various router parameters. Below are the default values.
 > $data_width = 32;  
 > $vch_num = 8;  
 > $buf_size = 16;  
-> $arbiter_type = fixed; (fixed or roundrobin)
+> $arbiter_type = fixed;  # fixed or roundrobin
 
 You can customize the traffic pattern. Below are the default values.
-> $traffic_ptn = random; [random or uniform]  
+> $traffic_ptn = random;  # random or uniform  
 > $packet_len = 5;  
 > $packet_num = 40;  
+
+## RTL simulation (Icarus Verilog or Cadence NC-Verilog)
+
+For Icarus Verilog:
+```sh
+$ make isim
+```
+
+For NC-Verilog:
+```sh
+$ make nsim
+```
+
+Below are performance results ($packet_num=32, $traffic_ptn=uniform, $packet_len=15, $buf_size=15).
+
+> 2D Mesh (16 nodes, 1 VC)  920 cycles  
+> 2D Mesh (16 nodes, 8 VCs) 693 cycles  
+> Linear (16 nodes, 1 VC)   2402 cycles  
+> Linear (16 nodes, 8 VCs)  1634 cycles  
+
+2D Mesh is better than Linear. Performance improves when using more VCs.
+
+## Design Synthesis (Synopsys Design Compiler)
+
