@@ -95,9 +95,9 @@ Then you can estimate the energy-per-bit of a large router ($vch_num=8, $buf_siz
 > Power with 3 streams: 46.8 mW  
 > Power with 4 streams: 47.2 mW  
 > Power with 5 streams: 47.6 mW  
-> --> Delta is approx 0.4 mW  
 
-> 0.4 mJ is consumed in 1 sec  
+Delta is approx 0.4 mW. So, 0.4 mJ is consumed in 1 sec.
+
 > Frequency: 200 MHz  
 > Link utilization: 4/13  
 > Flit width: 32 bit  
@@ -114,9 +114,9 @@ Also you can estimate the energy-per-bit of a large router ($vch_num=2, $buf_siz
 > Power with 3 streams: 5.08 mW  
 > Power with 4 streams: 5.25 mW  
 > Power with 5 streams: 5.43 mW  
-> --> Delta is approx 0.17 mW  
 
-> 0.17 mJ is consumed in 1 sec  
+Delta is approx 0.17 mW. So, 0.17 mJ is consumed in 1 sec.
+
 > Frequency: 200 MHz  
 > Link utilization: 4/13  
 > Flit width: 32 bit  
@@ -131,3 +131,10 @@ Also you can estimate the energy-per-bit of a large router ($vch_num=2, $buf_siz
 $ make allclean
 $ ./nocgen.pl clean
 ```
+
+## Reference
+
+If you use our NoC generator, please cite our original paper as follows.
+
+> "An open-source on-chip router model originally developed for [Matsutani_HPCA09]"  
+> [Matsutani_HPCA09] Hiroki Matsutani, Michihiro Koibuchi, Hideharu Amano, Tsutomu Yoshinaga, "Prediction Router: Yet Another Low Latency On-Chip Router Architecture", Proc. of the 15th IEEE International Symposium on High-Performance Computer Architecture (HPCA'09), pp.367-378, Feb 2009.
