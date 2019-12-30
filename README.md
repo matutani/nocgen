@@ -13,6 +13,7 @@ By modifying the Perl script, you can customize the network topology, routing al
 ```
 
 You can customize the network topology. Below are some examples.
+
 2D Mesh topology (4x4 = 16 nodes):
 > $array_size = 4;  
 > $topology_type = mesh;  
@@ -22,3 +23,15 @@ Linear topology (16 nodes):
 > $array_size = 16;  
 > $topology_type = linear;  
 > $routing_type = mesh1d;  
+
+You can customize various router parameters. Below are the default values.
+
+> $data_width = 32;  
+> $vch_num = 8;  
+> $buf_size = 16;  
+> $arbiter_type = fixed; (fixed or roundrobin)
+
+You can customize the traffic pattern. Below are the default values.
+> $traffic_ptn = random; (random or uniform)
+> $packet_len = 5;
+> $packet_num = 40;
